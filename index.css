@@ -1,5 +1,6 @@
 :root {
   --swatch-black: #000000;
+  --swatch-marine: #183b4f;
   --swatch-orange: #ff5500;
   --swatch-orange-hover: #fc8038;
   --swatch-orange-hover-dark: #d15415;
@@ -364,4 +365,23 @@
     width: 100%;
     left: 0;
    }
+}
+
+/* Bookingmask hover dagen */
+
+.datepicker-day {
+  background-color: var(--swatch-marine);
+  color: var(--swatch-orange);
+  width: 65px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial';
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+  &:hover {
+    color: var(--swatch-white);
+    background-color: var(--swatch-orange);
+  }
 }
