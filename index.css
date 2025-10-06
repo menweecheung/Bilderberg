@@ -535,3 +535,30 @@ input[type="radio"] {
 .de {
   border-radius: 0 0 10px 10px;
 }
+
+/* Zooming in images */
+
+.content-picture {
+  aspect-ratio: 16 / 9;
+  width: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.content-picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://www.bilderberg.nl/media/original_images/2014/11/17/7107_achteraanzicht_hotel_kasteel_vaalsbroek.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+
+.content-picture:hover::before {
+  transform: scale(1.1);
+}
