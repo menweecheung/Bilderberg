@@ -1,0 +1,24 @@
+.image-wrapper {
+  position: relative;
+  width: 350px;
+  aspect-ratio: 1 / 1;
+  background-image: url("https://www.bilderberg.nl/media/original_images/2014/11/17/7107_achteraanzicht_hotel_kasteel_vaalsbroek.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://www.bilderberg.nl/media/original_images/2014/11/24/parkhotel_7575_hotelaanzicht.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+}
+
+.image-wrapper:hover::after {
+  opacity: 1;
+}
