@@ -4,6 +4,7 @@
   --swatch-orange-hover: #fc8038;
   --swatch-orange-hover-dark: #d15415;
   --swatch-white: #ffffff;
+  --swatch-light-yellow: #e6d091;
 }
 
 /* 3015 */
@@ -329,4 +330,38 @@
     background-color: var(--swatch-orange);
     margin-left: 14px;
   }
+}
+
+/* 3040 */
+
+.hotel-navigation-item {
+  font-family: 'Arial';
+  background-color: var(--swatch-light-yellow);
+  padding: 12px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel-navigation-link {
+  color: var(--swatch-orange);
+  cursor: pointer;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--swatch-orange);
+    transition: width 0.35s ease-out, left 0.35s ease-out;
+  }
+  
+  &:hover::after {
+    width: 100%;
+    left: 0;
+   }
 }
