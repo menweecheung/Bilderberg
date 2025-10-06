@@ -1,5 +1,6 @@
 :root {
   --swatch-orange: #ff5500;
+  --swatch-white: #ffffff;
 }
 
 /* 3015 */
@@ -87,4 +88,38 @@
   &:active::after {
     transform: rotate(180deg) translateY(-0.15rem);
   }
+}
+
+/* 3018 */
+
+.back-to-top {
+  position: sticky;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px;
+  width: 24px;
+  cursor: pointer;
+  
+  &:after {
+    transition: transform 0.3s ease;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('https://img.icons8.com/ size=100&id=DP1dstogaujR&format=png&color=000000');
+    mask-image: url('https://img.icons8.com/?size=100&id=DP1dstogaujR&format=png&color=000000');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background-color: var(--swatch-white);
+  }
+}
+
+.back-to-top:hover {
+  &::after {
+    transform: translateY(-5px);
+   }
 }
