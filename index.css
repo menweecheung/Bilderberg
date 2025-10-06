@@ -56,3 +56,35 @@
     transform: rotate(180deg);
     }
 }
+
+/* 3017 */
+
+.main-navigation {
+  all: unset;
+  
+  &:after {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('https://img.icons8.com/?size=100&id=85123&format=png&color=000000');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;      
+    mask-image: url('https://img.icons8.com/?size=100&id=85123&format=png&color=000000');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background-color: var(--swatch-orange);
+  }
+  
+  &:hover::after {
+    transform: translateY(0.15rem);
+  }
+  
+  &:active::after {
+    transform: rotate(180deg) translateY(-0.15rem);
+  }
+}
