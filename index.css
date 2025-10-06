@@ -1,6 +1,7 @@
 :root {
   --swatch-black: #000000;
   --swatch-marine: #183b4f;
+  --swatch-ocean: #066269;
   --swatch-orange: #ff5500;
   --swatch-orange-hover: #fc8038;
   --swatch-orange-hover-dark: #d15415;
@@ -384,4 +385,55 @@
     color: var(--swatch-white);
     background-color: var(--swatch-orange);
   }
+}
+
+/* Bookingmask hover hotels */
+
+.container {
+  background: var(--swatch-ocean);
+  width: 250px;
+  padding: 20px 10px;
+}
+
+.options {
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.hotel-selector {
+  font-family: 'Arial';
+  color: var(--swatch-white);
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--swatch-white);
+    border-radius: 50%;
+    background: transparent;
+    box-sizing: border-box;
+  }
+}
+
+.hotel-selector:hover::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
 }
