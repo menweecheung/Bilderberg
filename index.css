@@ -1,4 +1,5 @@
 :root {
+  --swatch-black: #000000;
   --swatch-orange: #ff5500;
   --swatch-orange-hover: #fc8038;
   --swatch-orange-hover-dark: #d15415;
@@ -289,5 +290,43 @@
   
   &:hover::after {
     transform: scale(1.3);
+  }
+}
+
+/* 3023 */
+
+.heading-arrowed {
+  font-family: 'Arial';
+  display: inline-flex;
+  align-items: center;
+  color: var(--swatch-black);
+  font-size: 20px;
+    
+  &:after {
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    -webkit-mask-image: url('https://img.icons8.com/?size=100&id=J1Ad3OTYKrUB&format=png&color=1A1A1A');
+    mask-image: url('https://img.icons8.com/?size=100&id=J1Ad3OTYKrUB&format=png&color=1A1A1A');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background-color: var(--swatch-black);
+    transition: margin 0.3s ease;
+  }
+  
+  &:hover {
+    color: var(--swatch-orange);
+  }
+  
+  &:hover::after {
+    background-color: var(--swatch-orange);
+    margin-left: 14px;
   }
 }
