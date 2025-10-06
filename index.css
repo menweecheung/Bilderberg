@@ -1,5 +1,6 @@
 :root {
   --swatch-orange: #ff5500;
+  --swatch-orange-hover: #fc8038;
   --swatch-white: #ffffff;
 }
 
@@ -164,4 +165,54 @@
 
 .datepicker-next:hover::after {
   transform: rotate(180deg) translateX(-0.5rem);
+}
+
+/* 3020 */
+
+.swiper {
+  border: solid 2px var(--swatch-orange);
+  background: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+    background-color: var(--swatch-orange);
+    -webkit-mask-image: url('https://img.icons8.com/?size=100&id=85498&format=png&color=000000');
+    mask-image: url('https://img.icons8.com/?size=100&id=85498&format=png&color=000000');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  &:hover {
+    border-color: var(--swatch-orange-hover);
+  }
+
+  &:hover::after {
+    background-color: var(--swatch-orange-hover);
+  }
+}
+
+.swiper-previous::after {
+  transform: rotate(0deg);
+}
+
+.swiper-next::after {
+  transform: rotate(180deg);
+}
+
+.swiper-previous:hover::after {
+  transform: rotate(0deg) translateX(-0.1rem);
+}
+
+.swiper-next:hover::after {
+  transform: rotate(180deg) translateX(-0.1rem);
 }
