@@ -1,3 +1,9 @@
+:root {
+  --swatch-orange: #ff5500;
+}
+
+/* 3015 */
+
 .image-wrapper {
   position: relative;
   width: 350px;
@@ -21,4 +27,32 @@
 
 .image-wrapper:hover::after {
   opacity: 1;
+}
+
+/* 3016 */
+
+.image-accordion-summary {
+  &:after {
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    -webkit-mask-image: url('https://img.icons8.com/?size=100&id=95779&format=png&color=1A1A1A');
+    mask-image: url('https://img.icons8.com/?size=100&id=95779&format=png&color=1A1A1A');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background-color: var(--swatch-orange);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  &:hover::after {
+    -webkit-mask-image: url('https://img.icons8.com/?size=100&id=3314&format=png&color=000000');
+    mask-image: url('https://img.icons8.com/?size=100&id=3314&format=png&color=000000');
+    transform: rotate(180deg);
+    }
 }
