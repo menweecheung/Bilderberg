@@ -465,3 +465,73 @@ input[type="radio"] {
     background-color: var(--swatch-white);
   }
 }
+
+/* Taalswitch */
+
+.language-select {
+  font-family: 'Arial';
+  cursor: pointer;
+  color: var(--swatch-black);
+  
+  &:hover {
+    color: var(--swatch-orange);
+    text-decoration: underline;
+  }
+  
+  &:after {
+    transition: transform 0.3s ease;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('https://img.icons8.com/?size=100&id=85123&format=png&color=000000');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;      
+    mask-image: url('https://img.icons8.com/?size=100&id=85123&format=png&color=000000');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background-color: var(--swatch-orange);
+    vertical-align: bottom;
+  }
+  
+  &:hover::after {
+    transform: translateY(0.15rem);
+  }
+  
+  &:active::after {
+    transform: rotate(180deg) translateY(-0.15rem);
+  }
+}
+
+.language-select-list {
+  font-family: 'Arial';
+  background-color: var(--swatch-ocean);
+  color: var(--swatch-white);
+  width: 200px;
+  border-radius: 0 0 10px 10px;
+  margin: 10px 0 0 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.language-select:active + .language-select-list {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.language-select-option {
+  padding: 14px;
+  list-style: none;
+  
+  &:hover {
+    background-color: var(--swatch-marine);
+  }
+}
+
+.de {
+  border-radius: 0 0 10px 10px;
+}
