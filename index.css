@@ -1,6 +1,7 @@
 :root {
   --swatch-orange: #ff5500;
   --swatch-orange-hover: #fc8038;
+  --swatch-orange-hover-dark: #d15415;
   --swatch-white: #ffffff;
 }
 
@@ -215,4 +216,46 @@
 
 .swiper-next:hover::after {
   transform: rotate(180deg) translateX(-0.1rem);
+}
+
+/* 3021 */
+
+.newsletter {
+  background-color: var(--swatch-orange);
+  border: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  color: var(--swatch-white);
+  
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('https://img.icons8.com/?size=100&id=86520&format=png&color=000000');
+    mask-image: url('https://img.icons8.com/?size=100&id=86520&format=png&color=000000');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background-color: var(--swatch-white);
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover {
+    background-color: var(--swatch-orange-hover-dark);
+  }
+}
+
+.newsletter:hover::after {
+  animation: bounce 1s ease-out;
+}
+
+@keyframes bounce {
+   0% { transform: translateX(0); }
+   33% { transform: translateX(0.25rem); }
+   66% { transform: translateX(-0.25rem); }
+   100% { transform: translateX(0); }
 }
