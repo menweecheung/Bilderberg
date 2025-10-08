@@ -476,6 +476,9 @@ input[type="radio"] {
   font-family: 'Arial';
   cursor: pointer;
   color: var(--swatch-black);
+  display: inline-flex;       
+  align-items: center;   
+  gap: 0.25rem; 
   
   &:hover {
     color: var(--swatch-orange);
@@ -498,6 +501,7 @@ input[type="radio"] {
     mask-position: center;
     background-color: var(--swatch-orange);
     vertical-align: bottom;
+    pointer-events: auto;
   }
   
   &:hover::after {
