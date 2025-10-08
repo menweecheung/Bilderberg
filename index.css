@@ -39,7 +39,11 @@
 /* 3016 */
 
 .image-accordion-summary {
+  display: inline-block;
+  pointer-events: none;
+  
   &:after {
+    pointer-events: auto;
     cursor: pointer;
     content: "";
     display: inline-block;
