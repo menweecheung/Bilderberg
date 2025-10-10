@@ -12,6 +12,7 @@
 
 * {
   box-sizing: border-box;
+  background: red;
 }
 
 .feature-block {
@@ -262,7 +263,6 @@
   width: 56px;
   height: 56px;
   color: var(--swatch-white);
-  position: relative;
   
   &:after {
     content: "";
