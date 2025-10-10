@@ -8,6 +8,9 @@
   --swatch-white: #ffffff;
   --swatch-light-yellow: #e6d091;
 }
+* {
+  box-sizing: border-box;
+}
 
 .feature-block {
   display: inline-block;
