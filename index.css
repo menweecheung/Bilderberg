@@ -259,7 +259,10 @@
   border: none;
   cursor: pointer;
   padding: 10px 12px;
+  width: 56px;
+  height: 56px;
   color: var(--swatch-white);
+  position: relative;
   
   &:after {
     content: "";
