@@ -10,6 +10,10 @@
   --swatch-light-yellow: #e6d091;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .feature-block {
   display: inline-block;
   padding: 35px 35px 0 35px;
