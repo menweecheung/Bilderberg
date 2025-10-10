@@ -9,6 +9,13 @@
   --swatch-light-yellow: #e6d091;
 }
 
+.feature-block {
+  display: inline-block;
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 /* 3015 */
 
 .image-wrapper {
