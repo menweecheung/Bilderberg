@@ -212,8 +212,7 @@
   &::after {
     content: "";
     display: inline-block;
-    width: 56px;
-    height: 56px;
+    width: 24px;
     margin-top: 4px;
     background-color: var(--swatch-orange);
     -webkit-mask-image: url('https://img.icons8.com/?size=100&id=85498&format=png&color=000000');
@@ -266,13 +265,9 @@
   
   &:after {
     content: "";
-    position: absolute; /* erbij gedaan */
     display: inline-block;
     width: 24px;
     height: 24px;
-    top: 50%; /* erbij */
-    left: 50%; /* erbij */
-    transform: translate(-50%, -50%); /* erbij */
     -webkit-mask-image: url('https://img.icons8.com/?size=100&id=86520&format=png&color=000000');
     mask-image: url('https://img.icons8.com/?size=100&id=86520&format=png&color=000000');
     -webkit-mask-repeat: no-repeat;
@@ -282,7 +277,7 @@
     -webkit-mask-position: center;
     mask-position: center;
     background-color: var(--swatch-white);
-    /* transition: transform 0.3s ease; */
+    transition: transform 0.3s ease;
   }
   
   &:hover {
@@ -295,14 +290,10 @@
 }
 
 @keyframes bounce {
-  /* 0% { transform: translateX(0); }
-   33% { transform: translateX(0.25rem); }
-   66% { transform: translateX(-0.25rem); }
-   100% { transform: translateX(0); } */
-  0%   { transform: translate(-50%, -50%) translateX(0); }
-  33%  { transform: translate(-50%, -50%) translateX(0.25rem); }
-  66%  { transform: translate(-50%, -50%) translateX(-0.25rem); }
-  100% { transform: translate(-50%, -50%) translateX(0); }
+  0% { transform: translateX(0); }
+  33% { transform: translateX(0.25rem); }
+  66% { transform: translateX(-0.25rem); }
+  100% { transform: translateX(0); }
 }
 
 /* 3022 */
