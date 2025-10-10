@@ -279,7 +279,6 @@
     mask-position: center;
     background-color: var(--swatch-white);
     transition: transform 0.3s ease;
-    transform: translateX(0); /* new */
   }
   
   &:hover {
