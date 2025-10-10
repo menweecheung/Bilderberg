@@ -1,4 +1,5 @@
 :root {
+  --swatch-light-beige: #e6d091;
   --swatch-black: #000000;
   --swatch-grey: #707070;
   --swatch-marine: #183b4f;
@@ -7,12 +8,10 @@
   --swatch-orange-hover: #fc8038;
   --swatch-orange-hover-dark: #d15415;
   --swatch-white: #ffffff;
-  --swatch-light-yellow: #e6d091;
 }
 
 * {
   box-sizing: border-box;
-  background: red;
 }
 
 .feature-block {
@@ -372,7 +371,7 @@
 
 .hotel-navigation-item {
   font-family: 'Arial';
-  background-color: var(--swatch-light-yellow);
+  background-color: var(--swatch-light-beige);
   padding: 12px;
   width: 80px;
   display: flex;
