@@ -21,12 +21,13 @@
 
   & > span {
     display: block;
-    margin: 25px 0;
+    margin-bottom: 25px;
   }
 
   & > p {
     color: var(--swatch-grey);
     line-height: 32px;
+    margin: 10px 0;
 }
 
 /* 3015 */
