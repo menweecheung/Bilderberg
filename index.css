@@ -1,5 +1,6 @@
 :root {
   --swatch-black: #000000;
+  --swatch-grey: #707070;
   --swatch-marine: #183b4f;
   --swatch-ocean: #066269;
   --swatch-orange: #ff5500;
@@ -8,6 +9,7 @@
   --swatch-white: #ffffff;
   --swatch-light-yellow: #e6d091;
 }
+
 * {
   box-sizing: border-box;
   font-family: 'Arial';
@@ -15,12 +17,20 @@
 
 .feature-block {
   display: inline-block;
-  padding: 50px;
+  padding: 35px;
   margin: 0 10px;
   border-radius: 4px;
   width: 100%;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
   background: lightgrey;
+
+  & > span {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  & > p {
+    color: var(--swatch-grey);
 }
 
 /* 3015 */
