@@ -213,6 +213,7 @@
     content: "";
     display: inline-block;
     width: 24px;
+    height: 24px;
     margin-top: 4px;
     background-color: var(--swatch-orange);
     -webkit-mask-image: url('https://img.icons8.com/?size=100&id=85498&format=png&color=000000');
