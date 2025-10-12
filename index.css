@@ -22,7 +22,6 @@
   width: 100%;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
   font-family: 'Arial';
-  background: red;
 
   & > span {
     display: block;
@@ -279,6 +278,7 @@
     mask-position: center;
     background-color: var(--swatch-white);
     transition: transform 0.3s ease;
+    animation: none; /* new */
   }
   
   &:hover {
@@ -288,8 +288,6 @@
 
 .newsletter:hover::after {
   animation: bounce 1s ease-out;
-  animation-iteration-count: 1; /* new */
-  animation-fill-mode: both; /* new */
 }
 
 @keyframes bounce {
